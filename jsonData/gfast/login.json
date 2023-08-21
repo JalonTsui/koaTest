@@ -1,0 +1,801 @@
+{
+    "code": 0,
+    "message": "",
+    "data": {
+        "userInfo": {
+            "id": 31,
+            "userName": "demo",
+            "userNickname": "李四",
+            "userPassword": "",
+            "userSalt": "46PvWe1Sl7",
+            "userStatus": 1,
+            "isAdmin": 1,
+            "avatar": "upload_file/2022-11-11/co9copop81co0gysbz.jpg",
+            "deptId": 109,
+            "roles": [
+                "admin"
+            ]
+        },
+        "token": "7ZUSfVIf2HyYjcv86SKPPs29v003ECPEScsdYsYYqO1nRjI9D1gPD3cmoc9YhQTyWzqj6tqZxeXrU3FaJetelgthpdnsgvU0hDfKVjS5dEPnzl5cEByuCRR2JyGkTHMy06HhuWTkJIr7Vho5oEwYpQ==",
+        "menuList": [
+            {
+                "id": 27,
+                "pid": 0,
+                "name": "apiV1SystemDict",
+                "component": "layout/routerView/parent",
+                "path": "/system/dict",
+                "meta": {
+                    "icon": "iconfont icon-shuxingtu",
+                    "title": "系统配置",
+                    "isLink": "",
+                    "isHide": false,
+                    "isKeepAlive": true,
+                    "isAffix": false,
+                    "isIframe": false
+                },
+                "children": [
+                    {
+                        "id": 28,
+                        "pid": 27,
+                        "name": "apiV1SystemDictTypeList",
+                        "component": "system/dict/index",
+                        "path": "/system/dict/type/list",
+                        "meta": {
+                            "icon": "iconfont icon-crew_feature",
+                            "title": "字典管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 29,
+                        "pid": 27,
+                        "name": "apiV1SystemDictDataList",
+                        "component": "system/dict/dataList",
+                        "path": "/system/dict/data/list/:dictType",
+                        "meta": {
+                            "icon": "iconfont icon-putong",
+                            "title": "字典数据管理",
+                            "isLink": "",
+                            "isHide": true,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 30,
+                        "pid": 27,
+                        "name": "apiV1SystemConfigList",
+                        "component": "system/config/index",
+                        "path": "/system/config/list",
+                        "meta": {
+                            "icon": "ele-Cherry",
+                            "title": "参数管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "pid": 0,
+                "name": "apiV1SystemAuth",
+                "component": "layout/routerView/parent",
+                "path": "/system/auth",
+                "meta": {
+                    "icon": "ele-Stamp",
+                    "title": "权限管理",
+                    "isLink": "",
+                    "isHide": false,
+                    "isKeepAlive": true,
+                    "isAffix": false,
+                    "isIframe": false
+                },
+                "children": [
+                    {
+                        "id": 2,
+                        "pid": 1,
+                        "name": "apiV1SystemAuthMenuList",
+                        "component": "system/menu/index",
+                        "path": "/system/auth/menuList",
+                        "meta": {
+                            "icon": "ele-Calendar",
+                            "title": "菜单管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 10,
+                        "pid": 1,
+                        "name": "apiV1SystemRoleList",
+                        "component": "system/role/index",
+                        "path": "/system/auth/roleList",
+                        "meta": {
+                            "icon": "iconfont icon-juxingkaobei",
+                            "title": "角色管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 15,
+                        "pid": 1,
+                        "name": "apiV1SystemDeptList",
+                        "component": "system/dept/index",
+                        "path": "/system/auth/deptList",
+                        "meta": {
+                            "icon": "iconfont icon-siweidaotu",
+                            "title": "部门管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 22,
+                        "pid": 1,
+                        "name": "apiV1SystemPostList",
+                        "component": "system/post/index",
+                        "path": "/system/auth/postList",
+                        "meta": {
+                            "icon": "iconfont icon-neiqianshujuchucun",
+                            "title": "岗位管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 26,
+                        "pid": 1,
+                        "name": "apiV1SystemUserList",
+                        "component": "system/user/index",
+                        "path": "/system/auth/user/list",
+                        "meta": {
+                            "icon": "ele-User",
+                            "title": "用户管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 31,
+                "pid": 0,
+                "name": "apiV1SystemMonitor",
+                "component": "layout/routerView/parent",
+                "path": "/system/monitor",
+                "meta": {
+                    "icon": "iconfont icon-xuanzeqi",
+                    "title": "系统监控",
+                    "isLink": "",
+                    "isHide": false,
+                    "isKeepAlive": true,
+                    "isAffix": false,
+                    "isIframe": false
+                },
+                "children": [
+                    {
+                        "id": 32,
+                        "pid": 31,
+                        "name": "apiV1SystemMonitorServer",
+                        "component": "system/monitor/server/index",
+                        "path": "/system/monitor/server",
+                        "meta": {
+                            "icon": "iconfont icon-shuju",
+                            "title": "服务监控",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 34,
+                        "pid": 31,
+                        "name": "apiV1SystemLoginLogList",
+                        "component": "system/monitor/loginLog/index",
+                        "path": "/system/monitor/loginLog",
+                        "meta": {
+                            "icon": "ele-Finished",
+                            "title": "登录日志",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 38,
+                        "pid": 31,
+                        "name": "apiV1SystemOperLogList",
+                        "component": "system/monitor/operLog/index",
+                        "path": "/system/monitor/operLog",
+                        "meta": {
+                            "icon": "iconfont icon-bolangnengshiyanchang",
+                            "title": "操作日志",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 39,
+                        "pid": 31,
+                        "name": "apiV1SystemOnlineList",
+                        "component": "system/monitor/userOnline/index",
+                        "path": "/system/monitor/userOnlie",
+                        "meta": {
+                            "icon": "iconfont icon-skin",
+                            "title": "在线用户",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 35,
+                "pid": 0,
+                "name": "apiV1SystemTools",
+                "component": "layout/routerView/parent",
+                "path": "/system/tools",
+                "meta": {
+                    "icon": "iconfont icon-zujian",
+                    "title": "系统工具",
+                    "isLink": "",
+                    "isHide": false,
+                    "isKeepAlive": true,
+                    "isAffix": false,
+                    "isIframe": false
+                },
+                "children": [
+                    {
+                        "id": 33,
+                        "pid": 35,
+                        "name": "apiSwagger",
+                        "component": "layout/routerView/iframes",
+                        "path": "/system/swagger",
+                        "meta": {
+                            "icon": "iconfont icon--chaifenlie",
+                            "title": "api文档",
+                            "isLink": "/swagger",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": true
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 36,
+                        "pid": 35,
+                        "name": "apiV1SystemToolsGenTableList",
+                        "component": "system/tools/gen/index",
+                        "path": "/system/tools/gen",
+                        "meta": {
+                            "icon": "iconfont icon-step",
+                            "title": "代码生成",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": [
+                            {
+                                "id": 37,
+                                "pid": 36,
+                                "name": "apiV1SystemToolsGenColumnList",
+                                "component": "system/tools/gen/component/edit",
+                                "path": "/system/tools/gen/edit",
+                                "meta": {
+                                    "icon": "ele-Edit",
+                                    "title": "代码生成配置",
+                                    "isLink": "",
+                                    "isHide": true,
+                                    "isKeepAlive": true,
+                                    "isAffix": false,
+                                    "isIframe": false
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 53,
+                        "pid": 35,
+                        "name": "apiV1SystemSysJobList",
+                        "component": "system/sysJob/list/index",
+                        "path": "/system/sysJob/list",
+                        "meta": {
+                            "icon": "fa fa-superpowers",
+                            "title": "定时任务",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 60,
+                        "pid": 35,
+                        "name": "apiV1SystemModulesInfoList",
+                        "component": "system/modulesInfo/list/index",
+                        "path": "/system/modulesInfo/list",
+                        "meta": {
+                            "icon": "ele-Fold",
+                            "title": "模型管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 90,
+                        "pid": 35,
+                        "name": "apiV1SystemModulesFieldList",
+                        "component": "system/modulesField/list/index",
+                        "path": "/system/modulesField/list",
+                        "meta": {
+                            "icon": "ele-Fold",
+                            "title": "模型字段",
+                            "isLink": "",
+                            "isHide": true,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 17,
+                "pid": 0,
+                "name": "outLink",
+                "component": "layout/routerView/parent",
+                "path": "/demo/outLink",
+                "meta": {
+                    "icon": "iconfont icon-zhongduancanshu",
+                    "title": "外链测试",
+                    "isLink": "",
+                    "isHide": false,
+                    "isKeepAlive": true,
+                    "isAffix": false,
+                    "isIframe": false
+                },
+                "children": [
+                    {
+                        "id": 16,
+                        "pid": 17,
+                        "name": "aliyun",
+                        "component": "layout/routerView/iframes",
+                        "path": "/demo/outLink/aliyun",
+                        "meta": {
+                            "icon": "iconfont icon-diannao1",
+                            "title": "阿里云-iframe",
+                            "isLink": "https://www.aliyun.com/daily-act/ecs/activity_selection?spm=5176.8789780.J_3965641470.5.568845b58KHj51",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": true
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 18,
+                        "pid": 17,
+                        "name": "tenyun",
+                        "component": "layout/routerView/link",
+                        "path": "/demo/outLink/tenyun",
+                        "meta": {
+                            "icon": "iconfont icon-shouye_dongtaihui",
+                            "title": "腾讯云-外链",
+                            "isLink": "https://cloud.tencent.com/act/new?cps_key=20b1c3842f74986b2894e2c5fcde7ea2\u0026fromSource=gwzcw.3775555.3775555.3775555\u0026utm_id=gwzcw.3775555.3775555.3775555\u0026utm_medium=cpc",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 83,
+                "pid": 0,
+                "name": "apiV1CmsCmsArticle",
+                "component": "layout/routerView/parent",
+                "path": "/cms/cmsArticle",
+                "meta": {
+                    "icon": "iconfont icon-fuwenbenkuang",
+                    "title": "文章管理",
+                    "isLink": "",
+                    "isHide": false,
+                    "isKeepAlive": true,
+                    "isAffix": false,
+                    "isIframe": false
+                },
+                "children": [
+                    {
+                        "id": 66,
+                        "pid": 83,
+                        "name": "apiV1CmsCmsConfigList",
+                        "component": "cms/cmsConfig/list/index",
+                        "path": "/cms/cmsConfig/list",
+                        "meta": {
+                            "icon": "ele-Setting",
+                            "title": "配置设置",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 72,
+                        "pid": 83,
+                        "name": "apiV1CmsCmsTagsList",
+                        "component": "cms/cmsTags/list/index",
+                        "path": "/cms/cmsTags/list",
+                        "meta": {
+                            "icon": "ele-Cellphone",
+                            "title": "标签管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 78,
+                        "pid": 83,
+                        "name": "apiV1CmsCmsCategoryList",
+                        "component": "cms/cmsCategory/list/index",
+                        "path": "/cms/cmsCategory/list",
+                        "meta": {
+                            "icon": "ele-Menu",
+                            "title": "文章分类",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 84,
+                        "pid": 83,
+                        "name": "apiV1CmsCmsArticleList",
+                        "component": "cms/cmsArticle/list/index",
+                        "path": "/cms/cmsArticle/list",
+                        "meta": {
+                            "icon": "ele-Fold",
+                            "title": "文章列表",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 95,
+                        "pid": 83,
+                        "name": "CmsCmsArticleListAdd",
+                        "component": "/cms/cmsArticle/list/add",
+                        "path": "/cms/cmsArticle/list/add",
+                        "meta": {
+                            "icon": "",
+                            "title": "添加文章",
+                            "isLink": "",
+                            "isHide": true,
+                            "isKeepAlive": false,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 96,
+                        "pid": 83,
+                        "name": "CmsCmsArticleListEdit",
+                        "component": "/cms/cmsArticle/list/edit",
+                        "path": "/cms/cmsArticle/list/edit",
+                        "meta": {
+                            "icon": "",
+                            "title": "修改文章",
+                            "isLink": "",
+                            "isHide": true,
+                            "isKeepAlive": false,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 103,
+                        "pid": 83,
+                        "name": "apiV1CmsCmsAd",
+                        "component": "layout/routerView/parent",
+                        "path": "/cms/cmsAd",
+                        "meta": {
+                            "icon": "iconfont icon-fuwenbenkuang",
+                            "title": "站内广告",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": [
+                            {
+                                "id": 104,
+                                "pid": 103,
+                                "name": "apiV1CmsCmsAdList",
+                                "component": "cms/cmsAd/list/index",
+                                "path": "/cms/cmsAd/list",
+                                "meta": {
+                                    "icon": "ele-Fold",
+                                    "title": "广告列表",
+                                    "isLink": "",
+                                    "isHide": false,
+                                    "isKeepAlive": true,
+                                    "isAffix": false,
+                                    "isIframe": false
+                                },
+                                "children": []
+                            },
+                            {
+                                "id": 110,
+                                "pid": 103,
+                                "name": "apiV1CmsCmsAdPositionList",
+                                "component": "cms/cmsAdPosition/list/index",
+                                "path": "/cms/cmsAdPosition/list",
+                                "meta": {
+                                    "icon": "ele-Fold",
+                                    "title": "广告位置",
+                                    "isLink": "",
+                                    "isHide": false,
+                                    "isKeepAlive": true,
+                                    "isAffix": false,
+                                    "isIframe": false
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 157,
+                        "pid": 83,
+                        "name": "cmsHome",
+                        "component": "layout/routerView/link",
+                        "path": "/cms/outLink/home",
+                        "meta": {
+                            "icon": "iconfont icon-xianshimima",
+                            "title": "前台预览",
+                            "isLink": "/home",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 127,
+                "pid": 0,
+                "name": "apiV1UcenterUcenterMembers",
+                "component": "layout/routerView/parent",
+                "path": "/ucenter/ucenterMembers",
+                "meta": {
+                    "icon": "iconfont icon-icon-",
+                    "title": "用户中心",
+                    "isLink": "",
+                    "isHide": false,
+                    "isKeepAlive": true,
+                    "isAffix": false,
+                    "isIframe": false
+                },
+                "children": [
+                    {
+                        "id": 116,
+                        "pid": 127,
+                        "name": "apiV1UcenterUcenterConfigList",
+                        "component": "ucenter/ucenterConfig/list/index",
+                        "path": "/ucenter/ucenterConfig/list",
+                        "meta": {
+                            "icon": "ele-Setting",
+                            "title": "用户中心配置",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 122,
+                        "pid": 127,
+                        "name": "apiV1UcenterUcenterLevelList",
+                        "component": "ucenter/ucenterLevel/list/index",
+                        "path": "/ucenter/ucenterLevel/list",
+                        "meta": {
+                            "icon": "ele-Flag",
+                            "title": "用户等级",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 128,
+                        "pid": 127,
+                        "name": "apiV1UcenterUcenterMembersList",
+                        "component": "ucenter/ucenterMembers/list/index",
+                        "path": "/ucenter/ucenterMembers/list",
+                        "meta": {
+                            "icon": "ele-Avatar",
+                            "title": "用户列表",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 134,
+                        "pid": 127,
+                        "name": "apiV1UcenterUcenterScoresList",
+                        "component": "ucenter/ucenterScores/list/index",
+                        "path": "/ucenter/ucenterScores/list",
+                        "meta": {
+                            "icon": "ele-Coin",
+                            "title": "用户积分明细",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 140,
+                        "pid": 127,
+                        "name": "apiV1UcenterUcenterMessageList",
+                        "component": "ucenter/ucenterMessage/list/index",
+                        "path": "/ucenter/ucenterMessage/list",
+                        "meta": {
+                            "icon": "ele-CopyDocument",
+                            "title": "用户消息管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    },
+                    {
+                        "id": 146,
+                        "pid": 127,
+                        "name": "apiV1UcenterUcenterNotificationsList",
+                        "component": "ucenter/ucenterNotifications/list/index",
+                        "path": "/ucenter/ucenterNotifications/list",
+                        "meta": {
+                            "icon": "ele-Bell",
+                            "title": "用户通知管理",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 151,
+                "pid": 0,
+                "name": "apiV1UcenterUcenterLoginLog",
+                "component": "layout/routerView/parent",
+                "path": "/ucenter/ucenterLoginLog",
+                "meta": {
+                    "icon": "iconfont icon-fuwenbenkuang",
+                    "title": "系统访问记录管理",
+                    "isLink": "",
+                    "isHide": true,
+                    "isKeepAlive": true,
+                    "isAffix": false,
+                    "isIframe": false
+                },
+                "children": [
+                    {
+                        "id": 152,
+                        "pid": 151,
+                        "name": "apiV1UcenterUcenterLoginLogList",
+                        "component": "ucenter/ucenterLoginLog/list/index",
+                        "path": "/ucenter/ucenterLoginLog/list",
+                        "meta": {
+                            "icon": "ele-Fold",
+                            "title": "系统访问记录列表",
+                            "isLink": "",
+                            "isHide": false,
+                            "isKeepAlive": true,
+                            "isAffix": false,
+                            "isIframe": false
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "permissions": [
+            "*/*/*"
+        ]
+    }
+}
