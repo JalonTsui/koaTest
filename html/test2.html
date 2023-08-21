@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width: 500px) {
+            .ads_contain .div1 {
+                font-size: 40px !important;
+            }
+
+            .ads_contain .div2 {
+                font-size: 27px !important;
+            }
+
+            .ads_contain .div3 {
+                font-size: 17px !important;
+            }
+
+            .ads_contain .div4 {
+                font-size: 16px !important;
+            }
+        }
+
+        @media only screen and (max-width: 320px) {
+            .ads_contain .div1 {
+                margin-top: 16px !important;
+                font-size: 24px !important;
+            }
+
+            .ads_contain .div2 {
+                font-size: 16px !important;
+            }
+
+            .ads_contain .div3 {
+                display: none !important;
+            }
+
+            .ads_contain .div4 {
+                display: none !important;
+            }
+
+            .ads_contain .div5 {
+                margin-top: 12px !important;
+                font-size: 14px !important;
+            }
+
+            .ads_contain .div6 {
+                margin-top: 2px !important;
+            }
+
+            .ads_contain .btn {
+                width: 180px !important;
+                font-size: 14px !important;
+                margin-bottom: 0px !important;
+            }
+
+            .ads_contain .line {
+                margin-top: 10px !important;
+            }
+
+            .ads_contain .footer {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                margin-top: 10px !important;
+            }
+
+            .ads_contain .footer div,
+            img {
+                margin-right: 10px !important;
+            }
+        }
+
+
+         .ads_contain {
+            /* padding: 14px 30px 12px 30px; */
+            box-sizing: border-box;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* width: 600px; */
+            width: 100%;
+            position: relative;
+        }
+
+         .ads_contain .close_ads {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: #3d3d3d;
+        }
+
+         .ads_contain .close_ads:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+         .ads_contain .line {
+            margin-top: 21px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            width: 100%;
+        }
+
+         .ads_contain .div1 {
+            font-weight: 700;
+            font-size: 50px;
+            color: #754cff;
+            margin-top: 24px;
+        }
+
+         .ads_contain .div2 {
+            font-weight: 700;
+            font-size: 33px;
+            color: #e71cfe;
+        }
+
+         .ads_contain .div3 {
+            margin-top: 24px;
+            font-weight: 600;
+            font-size: 22px;
+            color: #3d3d3d;
+        }
+
+         .ads_contain .div4 {
+            margin-top: 24px;
+            padding-bottom: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgba(58, 0, 255, 0.7);
+        }
+
+         .ads_contain .div4:hover {
+            cursor: pointer;
+        }
+
+         .ads_contain .div5 {
+            margin-top: 19px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 22px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+         .ads_contain .btn {
+            margin-top: 14px;
+            background: linear-gradient(90deg,
+                    #c207dc 2%,
+                    rgba(58, 0, 255, 0.7) 100%,
+                    rgba(58, 0, 255, 0.7) 100%);
+            width: 260px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+         .ads_contain .btn:hover {
+            cursor: pointer;
+        }
+
+         .ads_contain .div6 {
+            margin-top: 14px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #754cff;
+        }
+
+         .ads_contain .footer {
+            margin-top: 37px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ads_contain">
+        <div>
+            <a href="https://creati.ai/" style="display: block" target="_blank">
+                <img width="153px" src="https://cdn.creati.ai/image/creatiai-logo-black.png" alt="Creati.ai" />
+            </a>
+        </div>
+        <div class="div1">Best AI for Creating</div>
+        <div class="div2">Blog, Social Post, Ad & more</div>
+        <div class="div3">SIGN UP TODAY TO GET 10,000 WORDS FREE</div>
+        <div class="div4" onclick="toCreatiAi(event)">
+            Create content with 100+ templates for free now!
+        </div>
+        <div class="line"></div>
+        <div class="div5">
+            Produce SEO-optimized, plagiarism-free content 10X faster for your
+            website, ads, blogs, and emails.
+        </div>
+        <div class="btn" onclick="toCreatiAi(event)">
+            <div>Start Creating For Free</div>
+        </div>
+        <div class="div6">No credit card required</div>
+        <div class="line"></div>
+        <div class="footer">
+            <div style="font-size: 14px; font-weight: 500; color: #3d3d3d">
+                POWERED BY
+            </div>
+            <img src="https://cdn.creati.ai/image/openai-logo.svg" alt="Creati.ai" />
+            <img src="https://cdn.creati.ai/image/nvidia-logo.svg" alt="Creati.ai" />
+            <img src="https://cdn.creati.ai/image/aws-logo.svg" alt="Creati.ai" />
+            <img src="https://cdn.creati.ai/image/google-logo.svg" alt="Creati.ai" />
+            <img src="https://cdn.creati.ai/image/meta-logo.svg" alt="Creati.ai" />
+        </div>
+    </div>
+    <!-- </div> -->
+</body>
+<script>
+    function toCreatiAi(e) {
+        e.stopPropagation()
+        window.open("https://creati.ai/", "_blank");
+    }
+</script>
+
+</html>

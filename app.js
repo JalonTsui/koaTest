@@ -4,10 +4,12 @@ const cors = require("koa2-cors");
 const homeRouter = require("./routes/home");
 const streamRouter = require("./routes/stream");
 const gfastRouter = require('./routes/gfast')
+const adsRouter = require('./routes/createAi')
 const app = new Koa();
 // 自定义中间件
 app.use(async (ctx, next) => {
   // 加上await可以保证处理完该中间件再执行下一个
+  // console.log('new')
   console.log('require time===>>>', new Date().toLocaleString())
   console.log("origion===>>>", ctx.request.header.referer);
   console.log("url===>>>", ctx.request.url + '\n');
@@ -57,6 +59,8 @@ app.use(homeRouter.routes());
 app.use(streamRouter.routes());
 
 app.use(gfastRouter.routes())
+
+app.use(adsRouter.routes())
 
 app.listen(3000, () => {
   console.log("http://127.0.0.1:3000");
